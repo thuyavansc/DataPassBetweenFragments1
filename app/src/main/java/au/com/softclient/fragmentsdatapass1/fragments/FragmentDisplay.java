@@ -74,11 +74,14 @@ package au.com.softclient.fragmentsdatapass1.fragments;
 //    }
 //}
 
+
+
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
@@ -86,190 +89,6 @@ import androidx.lifecycle.ViewModelProvider;
 
 import au.com.softclient.fragmentsdatapass1.R;
 import au.com.softclient.fragmentsdatapass1.SharedViewModel;
-
-//public class FragmentDisplay extends Fragment {
-//
-//    private TextView textView;
-//    private SharedViewModel viewModel;
-//
-//    @Override
-//    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-//        View view = inflater.inflate(R.layout.fragment_display, container, false);
-//        textView = view.findViewById(R.id.textView);
-//        return view;
-//    }
-//
-//    @Override
-//    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-//        super.onActivityCreated(savedInstanceState);
-//        viewModel = new ViewModelProvider(requireActivity()).get(SharedViewModel.class);
-//
-//        // Retrieve data from the ViewModel and set it to the TextView
-//        viewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-//            @Override
-//            public void onChanged(String text) {
-//                textView.setText(text);
-//            }
-//        });
-//    }
-//}
-
-//
-//public class FragmentDisplay extends Fragment {
-//
-//    private TextView textView;
-//    private SharedViewModel viewModel;
-//
-//    @Override
-//    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-//        View view = inflater.inflate(R.layout.fragment_display, container, false);
-//        textView = view.findViewById(R.id.textView);
-//        return view;
-//    }
-//
-//    @Override
-//    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-//        super.onActivityCreated(savedInstanceState);
-//        viewModel = new ViewModelProvider(requireActivity()).get(SharedViewModel.class);
-//
-//        // Retrieve data from the ViewModel and set it to the TextView
-//        viewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-//            @Override
-//            public void onChanged(String text) {
-//                textView.setText(text);
-//            }
-//        });
-//    }
-//}
-
-
-import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TextView;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProvider;
-//
-//public class FragmentDisplay extends Fragment {
-//
-//    private TextView textView;
-//    private SharedViewModel viewModel;
-//
-//    @Override
-//    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-//        View view = inflater.inflate(R.layout.fragment_display, container, false);
-//        textView = view.findViewById(R.id.textView2);
-//        return view;
-//    }
-//
-//    @Override
-//    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-//        super.onViewCreated(view, savedInstanceState);
-//        viewModel = new ViewModelProvider(requireActivity()).get(SharedViewModel.class);
-//
-//        // Retrieve data from the ViewModel and set it to the TextView
-//        viewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-//            @Override
-//            public void onChanged(String text) {
-//                textView.setText(text);
-//            }
-//        });
-//
-//    }
-//}
-
-import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.EditText;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProvider;
-
-//public class FragmentEditable extends Fragment {
-//
-//    private EditText editText;
-//    private SharedViewModel viewModel;
-//
-//    @Override
-//    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-//        View view = inflater.inflate(R.layout.fragment_editable, container, false);
-//        editText = view.findViewById(R.id.editText2);
-//        return view;
-//    }
-//
-//    @Override
-//    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-//        super.onViewCreated(view, savedInstanceState);
-//        viewModel = new ViewModelProvider(requireActivity()).get(SharedViewModel.class);
-//
-//        // Retrieve data from the ViewModel and set it to the EditText
-//        viewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-//            @Override
-//            public void onChanged(String text) {
-//                editText.setText(text);
-//            }
-//        });
-//    }
-//}
-
-import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TextView;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProvider;
-
-/*
-public class FragmentDisplay extends Fragment {
-
-    private TextView textView;
-    private SharedViewModel viewModel;
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_display, container, false);
-        textView = view.findViewById(R.id.textView2);
-        return view;
-    }
-
-    @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-        viewModel = new ViewModelProvider(requireActivity()).get(SharedViewModel.class);
-
-        // Retrieve data from the ViewModel and set it to the TextView
-        viewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(String text) {
-                textView.setText(text);
-            }
-        });
-    }
-}
-*/
-
-import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TextView;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProvider;
 
 public class FragmentDisplay extends Fragment {
 
