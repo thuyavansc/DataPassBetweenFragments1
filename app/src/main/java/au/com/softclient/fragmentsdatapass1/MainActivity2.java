@@ -2,6 +2,7 @@ package au.com.softclient.fragmentsdatapass1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -53,6 +54,19 @@ public class MainActivity2 extends AppCompatActivity {
                         .beginTransaction()
                         .replace(R.id.fragmentContainer3, fragment2)
                         .commit();
+            }
+        });
+
+        //Act-2
+        Button buttonNavigate = findViewById(R.id.A2_button);
+        buttonNavigate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Create an Intent to start the target activity
+                Intent intent = new Intent(MainActivity2.this, MainActivity.class);
+
+                // Start the target activity
+                startActivity(intent);
             }
         });
     }

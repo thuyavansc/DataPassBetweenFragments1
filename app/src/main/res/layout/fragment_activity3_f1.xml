@@ -14,12 +14,13 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="204dp"
-            android:text="Fragment 1 -A3"
+            android:layout_marginTop="164dp"
+            android:text="Activity 3 Fragment 1"
             android:textColor="#20C13B"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.45"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 

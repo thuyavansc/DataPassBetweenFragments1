@@ -7,6 +7,19 @@
     tools:context=".fragments.FragmentDisplay">
 
     <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:text="Activity 1 Fragment 2"
+        android:textColor="#20C13B"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
         android:id="@+id/textReceive"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

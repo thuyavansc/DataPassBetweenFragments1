@@ -11,6 +11,17 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#4CAF50"
+            android:text="Activity 3"
+            android:textAlignment="center"
+            android:textColor="#EAEAEA"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -31,7 +42,7 @@
                 android:text="A3F2" />
 
             <Button
-                android:id="@+id/button5"
+                android:id="@+id/A3_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

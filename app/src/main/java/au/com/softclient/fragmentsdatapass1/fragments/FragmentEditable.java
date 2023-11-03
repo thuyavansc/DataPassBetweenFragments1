@@ -94,6 +94,7 @@ public class FragmentEditable extends Fragment {
 
     private EditText editText;
     private SharedViewModel viewModel;
+    private FragmentDisplay fragmentDisplay;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -117,6 +118,12 @@ public class FragmentEditable extends Fragment {
             public void onClick(View v) {
                 String input = editText.getText().toString();
                 viewModel.setMyText(input); // Set the text in the SharedViewModel
+
+                //fragmentDisplay = new FragmentDisplay();
+                requireActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.fragmentContainer, new FragmentDisplay())
+                        .commit();
+
             }
         });
 
