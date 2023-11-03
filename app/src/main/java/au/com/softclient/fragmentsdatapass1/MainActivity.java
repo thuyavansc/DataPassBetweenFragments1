@@ -79,6 +79,19 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        //Act-4
+        Button buttonNavigate4 = findViewById(R.id.at4);
+        buttonNavigate4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Create an Intent to start the target activity
+                Intent intent = new Intent(MainActivity.this, MainActivity4.class);
+
+                // Start the target activity
+                startActivity(intent);
+            }
+        });
     }
 
 

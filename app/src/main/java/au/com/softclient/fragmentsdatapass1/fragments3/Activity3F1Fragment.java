@@ -11,7 +11,6 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import au.com.softclient.fragmentsdatapass1.R;
-import au.com.softclient.fragmentsdatapass1.fragments2.Activity2F2Fragment;
 
 ///**
 // * A simple {@link Fragment} subclass.
@@ -72,8 +71,8 @@ public class Activity3F1Fragment extends Fragment {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
             View view = inflater.inflate(R.layout.fragment_activity3_f1, container, false);
-            EditText editText = view.findViewById(R.id.editText);
-            Button sendButton = view.findViewById(R.id.buttonSend);
+            EditText editText = view.findViewById(R.id.editTextA3F1);
+            Button sendButton = view.findViewById(R.id.buttonSendA3F1);
             MyApplication myApp = (MyApplication) requireActivity().getApplication();
 
 

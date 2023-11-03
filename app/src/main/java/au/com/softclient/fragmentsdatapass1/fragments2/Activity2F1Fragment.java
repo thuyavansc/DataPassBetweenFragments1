@@ -11,12 +11,12 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import au.com.softclient.fragmentsdatapass1.R;
-
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link Activity2F1Fragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+//
+///**
+// * A simple {@link Fragment} subclass.
+// * Use the {@link Activity2F1Fragment#newInstance} factory method to
+// * create an instance of this fragment.
+// */
 //public class Activity2F1Fragment extends Fragment {
 //
 //    // TODO: Rename parameter arguments, choose names that match
@@ -99,9 +99,9 @@ public class Activity2F1Fragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_activity2_f1, container, false);
-        editText = view.findViewById(R.id.editText);
+        editText = view.findViewById(R.id.editTextA2F1);
 
-        Button sendButton = view.findViewById(R.id.buttonSend);
+        Button sendButton = view.findViewById(R.id.buttonSendA2F1);
         sendButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -115,7 +115,7 @@ public class Activity2F1Fragment extends Fragment {
                 // Replace Fragment1 with Fragment2
                 requireActivity().getSupportFragmentManager()
                         .beginTransaction()
-                        .replace(R.id.fragmentContainer3, fragment2)
+                        .replace(R.id.fragmentContainer2, fragment2)
                         .addToBackStack(null)
                         .commit();
             }

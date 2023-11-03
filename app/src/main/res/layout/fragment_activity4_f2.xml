@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments3.Activity3F2Fragment">
+    tools:context=".fragment4.Activity4F2Fragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -12,31 +12,28 @@
         tools:context=".fragments.FragmentDisplay">
 
         <TextView
-            android:id="@+id/textReceiveA3F2"
+            android:id="@+id/textReceiveA4F2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="288dp"
+            android:layout_marginBottom="272dp"
             android:text="Receive"
             android:textColor="#EF2E2E"
             android:textSize="34sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.532"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2"
-            app:layout_constraintVertical_bias="0.325" />
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:id="@+id/textViewA3F2"
+            android:id="@+id/textViewA4F2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="224dp"
+            android:layout_marginStart="77dp"
+            android:layout_marginTop="243dp"
             android:text="Activity 3 Fragment 2"
             android:textColor="#20C13B"
             android:textSize="24sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 

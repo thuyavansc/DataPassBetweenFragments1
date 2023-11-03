@@ -4,32 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments3.Activity3F1Fragment">
+    tools:context=".fragment4.Activity4F1Fragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/textViewA3F1"
+            android:id="@+id/textViewA4F1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="164dp"
-            android:text="Activity 3 Fragment 1"
+            android:layout_marginTop="140dp"
+            android:text="Activity 4 Fragment 1"
             android:textColor="#20C13B"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.45"
+            app:layout_constraintHorizontal_bias="0.488"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/editTextA3F1"
+            android:id="@+id/editTextA4F1"
             android:layout_width="304dp"
             android:layout_height="67dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
             android:backgroundTint="#42AECD"
             android:hint="Enter text here"
             android:textColor="#F10707"
@@ -42,13 +40,14 @@
             app:layout_constraintVertical_bias="0.5" />
 
         <Button
-            android:id="@+id/buttonSendA3F1"
+            android:id="@+id/buttonSendA4F1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="136dp"
-            android:layout_marginBottom="176dp"
+            android:layout_marginBottom="212dp"
             android:text="Send"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editText2" />
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -76,7 +76,7 @@ public class Activity3F2Fragment extends Fragment {
         MyApplication myApp = (MyApplication) requireActivity().getApplication();
         String receivedData = myApp.getSharedData();
 
-        TextView textView = view.findViewById(R.id.textReceive);
+        TextView textView = view.findViewById(R.id.textReceiveA3F2);
         textView.setText(receivedData);
 
         return view;

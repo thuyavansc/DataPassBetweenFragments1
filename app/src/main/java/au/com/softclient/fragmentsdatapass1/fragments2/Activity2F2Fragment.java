@@ -75,7 +75,7 @@ public class Activity2F2Fragment extends Fragment {
             String receivedData = bundle.getString("dataKey", "");
 
             // Find the TextView and set the received data
-            TextView receivedDataTextView = view.findViewById(R.id.textReceive);
+            TextView receivedDataTextView = view.findViewById(R.id.textReceiveA2F2);
             receivedDataTextView.setText(receivedData);
         }
 
