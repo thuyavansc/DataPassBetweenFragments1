@@ -2,6 +2,7 @@ package au.com.softclient.fragmentsdatapass1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import android.os.Bundle;
@@ -28,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
 
         viewModel = new ViewModelProvider(this).get(SharedViewModel.class);
 
+
+
         if (savedInstanceState == null) {
             fragmentEditable = new FragmentEditable();
             getSupportFragmentManager().beginTransaction()
@@ -49,5 +52,34 @@ public class MainActivity extends AppCompatActivity {
                     .replace(R.id.fragmentContainer, new FragmentDisplay())
                     .commit();
         });
+
+
+        //Act-2
+        Button buttonNavigate = findViewById(R.id.at2);
+        buttonNavigate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Create an Intent to start the target activity
+                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+
+                // Start the target activity
+                startActivity(intent);
+            }
+        });
+
+        //Act-3
+        Button buttonNavigate3 = findViewById(R.id.at3);
+        buttonNavigate3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Create an Intent to start the target activity
+                Intent intent = new Intent(MainActivity.this, MainActivity3.class);
+
+                // Start the target activity
+                startActivity(intent);
+            }
+        });
     }
+
+
 }

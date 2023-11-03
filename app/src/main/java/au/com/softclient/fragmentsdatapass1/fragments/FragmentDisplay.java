@@ -98,7 +98,7 @@ public class FragmentDisplay extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_display, container, false);
-        textView = view.findViewById(R.id.textView2);
+        textView = view.findViewById(R.id.textReceive);
         return view;
     }
 
